@@ -445,20 +445,23 @@ input:focus{
 
 @media (prefers-reduced-motion: no-preference){
 
-
-  .anim-menu{
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: frame-menu 1s ease;
-  }
-
-  @keyframes frame-menu{
-
-    0%{
-      transform: translateX(100%);
+  @media screen and (max-width : 47.999rem){
+  
+    .anim-menu{
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: frame-menu 1s ease;
     }
 
-    100%{
-      transform: translateX(0%);
+    @keyframes frame-menu{
+
+      0%{
+        transform: translateX(100%);
+      }
+
+      100%{
+        transform: translateX(0%);
+      }
+
     }
 
   }
