@@ -1,0 +1,173 @@
+
+
+.pricing{
+  background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 16.5rem) -40rem / 48.75rem,
+              hsla(208, 33%, 71%, 0.25);  
+}
+
+
+/*MAIN*/
+
+.main-container .main-title-pricing{
+  margin: 1rem auto 3.125rem;
+  font-size: 2rem;
+}
+
+.section-price{
+  max-width: 20.4375rem;
+  margin: 0 auto 3.375rem;
+}
+
+.section-price .title{
+  font-size: 1.5rem;
+  letter-spacing: 0.01125rem;
+  margin-bottom: 1.5rem;
+  color: #BA4270;
+}
+
+.section-price .text{
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.section-price .price{
+  font-size: 3.5rem;
+  letter-spacing: -0.024rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-price .list-pricing{
+  font-size: 1rem;
+  text-align: left;
+  padding: 1.5rem 0;
+  border-top: 0.0625rem solid hsla(207, 33%, 32%, 0.25);
+  border-bottom: 0.0625rem solid hsla(207, 33%, 32%, 0.25);
+}
+
+.section-price .li-pricing{
+  width: 8.375rem;
+  color: hsla(207, 33%, 32%, 0.5);
+  margin: 0 auto;
+  padding-left: 1.85rem;
+  position: relative;
+}
+
+.section-price .li-pricing.selected{
+  color: hsl(207, 33%, 32%);
+}
+
+.section-price .li-pricing.selected::before{
+  content: '';
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.6rem;
+  background: url('./assets/shared/desktop/icon-check.svg') no-repeat center;
+  position: absolute;
+    top: 0.5rem; left: 0;
+}
+
+.section-price .li-pricing:not(:last-of-type){
+  margin-bottom: 0.8rem;
+}
+
+.section-price .button-request{
+  width: 10.5rem;
+  height: 3rem;
+  font-size: 0.9375rem;
+  color: #36536B;
+  border: 0.1rem solid #36536B;
+  border-radius: 1.5rem;
+  margin: 1.25rem auto;
+}
+
+
+
+/******** TABLET ********/
+
+@media screen and (min-width: 48rem){
+
+  .pricing{
+    background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 31rem) -30rem / 48.75rem,
+                hsla(208, 33%, 71%, 0.25);  
+  }
+
+  .main-container .main-title-pricing{
+    font-size: 3rem;  
+  }
+
+  .container-price{
+    width: 43.0625rem;
+    margin: 0 auto 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-price{
+    width: 13.9375rem;
+    margin: 0;
+  }
+
+  .section-price .text{
+    padding: 0;
+  }
+
+  .section-price .button-request:hover{
+    background: #36536B;
+    color: #FBFCFE;
+  }
+
+
+}
+
+
+/******** DESKTOP ********/
+
+@media screen and (min-width: 90rem){
+
+  .pricing{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-container{
+    flex-grow: 1;
+  }
+
+  .main-container .main-title-pricing{
+    width: 69.375rem;
+    font-size: 3.5rem;
+    margin: 3rem auto 5rem;
+  }
+
+  .container-price{
+    width: 69.375rem;
+  }
+
+  .section-price{
+    width: 21.875rem;
+  }
+
+  .section-price .title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-price .text{
+    margin-bottom: 0.8rem;
+  }
+
+  .section-price .price{
+    line-height: 1;
+    margin-bottom: 1.75rem;
+  }
+
+  .section-price .li-pricing{
+    margin: 0;
+  }
+
+  .section-price .button-request{
+    margin: 1.25rem 0 0;
+  }
+
+
+}

@@ -1,0 +1,220 @@
+
+.contact{
+  background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 16.5rem) -40rem / 48.75rem,
+          hsla(208, 33%, 71%, 0.25);  
+}
+
+.contact-title{
+  max-width: clamp(20.4375rem, 10.1202rem + 44.0204vw, 31.25rem);
+  margin: 1rem auto clamp(2rem, 1.0458rem + 4.0712vw, 3rem);
+}
+
+
+/*FORM*/
+
+.contact-form{
+  max-width: clamp(20.4375rem, 13.4003rem + 30.0254vw, 27.8125rem);
+  margin: 0 auto clamp(4.375rem, 5.5964rem + -2.5445vw, 5rem);
+}
+
+.container-input{
+  position: relative;
+}
+
+.contact-form .input{
+  background: transparent;
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 0.0625rem solid hsla(207, 33%, 32%, 0.5);
+}
+
+.contact-form textarea.input{
+  text-indent: 1.6rem;
+  resize: none;
+}
+
+.contact-form .container-input:last-of-type{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  background: hsla(207, 33%, 32%, 0.25);
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+input[type="checkbox"]:checked{
+  background: url('./assets/shared/desktop/icon-check-white.svg') no-repeat center,
+              #BA4270;
+}
+
+input[type="checkbox"]:hover{
+  cursor: pointer;
+}
+
+.input:focus{
+  outline: none;
+}
+
+.input.error-input{
+  color: #FF0000;
+  border-bottom: 0.0625rem solid #FF0000;
+}
+
+.contact-form .container-input span.error{
+  font-size: 0.6875rem;
+  color: #FF0000;
+  position: absolute;
+    bottom: -1.05rem; left: 0.25rem;
+}
+
+.contact-form .button.button-submit{
+  width: 9.5rem;
+  height: 3rem;
+  font-size: 0.9375rem;
+  color: #36536B;
+  border: 0.1rem solid #36536B;
+  border-radius: 1.5rem;
+  margin: 1.25rem 0 0;
+}
+
+
+/*ARTICLE-CLIENTS*/
+
+.contact .container-contact-client{
+  margin-bottom: clamp(5.375rem, 3.9437rem + 6.1069vw, 6.875rem);
+}
+
+.contact .client-title{
+  max-width: clamp(20.4375rem, 13.4003rem + 30.0254vw, 27.8125rem);
+  margin: 0 auto 2.25rem;
+  font-size: 1.5rem;
+  color: hsla(207, 33%, 32%, 0.75);
+}
+
+.contact .container-logo-clients{
+  margin: 0 auto;
+}
+
+.contact .logo-client{
+  filter: none;
+}
+
+
+
+/******** TABLET ********/
+
+@media screen and (min-width: 48rem){
+
+  .contact{
+    background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 31rem) -30rem / 48.75rem,
+            hsla(208, 33%, 71%, 0.25);  
+  }
+
+
+/*FORM*/
+
+  .contact-form .input:hover{
+    color: hsl(207, 33%, 32%);
+    border-bottom: 0.0625rem solid hsl(207, 33%, 32%);
+  }
+
+  .contact-form textarea.input:hover{
+    cursor: pointer;
+    color: hsl(207, 33%, 32%);
+    border-bottom: 0.0625rem solid hsl(207, 33%, 32%);
+  }
+
+  .button.button-submit:hover{
+    background: #36536B;
+    color: #fff;
+  }
+
+}
+
+
+
+/******** DESKTOP ********/
+
+@media screen and (min-width: 90rem){
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .main-container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    grid-template-rows: repeat(3, min-content);
+    justify-content: space-between;
+    width: 69.375rem;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+
+  .contact .contact-title{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    max-width: 45.625rem;
+    margin: 2.5rem 0 3rem;
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+
+  /*FORM*/
+
+  .contact-form{
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .contact-form .input{
+    padding: 1.25rem 0;
+  }
+
+  .contact-form textarea.input{
+    height: 7rem;
+  }
+
+  /*ARTICLE-CLIENTS*/
+
+  .contact .container-contact-client{
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+  }
+
+  .contact .client-title{
+    margin: 0 0 2.25rem;
+  }
+
+  .contact .container-logo-clients{
+    margin: 0;
+    width: 33.5rem;
+  }
+
+
+  /*READY-TO-START*/
+
+  .contact .ready-to-start{
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+    margin: 1rem auto 6rem;
+  }
+
+
+}

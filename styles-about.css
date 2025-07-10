@@ -1,0 +1,147 @@
+
+.about{
+  background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 16.5rem) -40rem / 48.75rem,
+            hsla(208, 33%, 71%, 0.25);  
+}
+
+.about .about-title{
+  max-width: clamp(20.4375rem, 5.7667rem + 62.5954vw, 35.8125rem);
+  margin: clamp(1rem, 0.0458rem + 4.0712vw, 2rem) auto clamp(3.125rem, 2.2901rem + 3.5623vw, 4rem);
+}
+
+.container-descriptive{
+  max-width: clamp(20.4375rem, 5.7667rem + 62.5954vw, 35.8125rem);
+  margin: 0 auto;
+}
+
+
+/*SECTION*/
+
+.descriptive{
+  margin-bottom: clamp(3.5rem, 2.5458rem + 4.0712vw, 4.5rem);
+}
+
+.descriptive-title{
+  font-size: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+
+/*IMAGE*/
+
+.image-about{
+  width: 100%;
+}
+
+
+/*NUMBER*/
+
+.container-number{
+  max-width: 20.4375rem;
+  margin: 3rem auto;
+  padding: 1rem 0;
+  border-top: 0.0625rem solid hsla(207, 33%, 32%, 0.25);
+  border-bottom: 0.0625rem solid hsla(207, 33%, 32%, 0.25);
+}
+
+.number{
+  margin-bottom: 2rem;
+}
+
+.number .text span{
+  display: block;
+}
+
+.number .text span:nth-of-type(1){
+  font-size: 1rem;
+  margin-bottom: 0.5rem; 
+}
+
+.number .text span:nth-of-type(2){
+  font-size: 3.5rem;
+  letter-spacing: -0.027rem;
+  line-height: 1;
+  color: #BA4270;
+}
+
+
+
+/***TABLET***/
+
+@media screen and (min-width: 48rem){
+
+  .about{
+    background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 31rem) -30rem / 48.75rem,
+            hsla(208, 33%, 71%, 0.25);  
+  }
+    
+  .container-descriptive{
+    max-width: clamp(43.0625rem, 26.5625rem + 34.375vw, 57.5rem);
+  }
+
+  /*SECTION*/
+
+  .descriptive{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .descriptive .text{
+    width: clamp(28.5rem, 15.7143rem + 26.6369vw, 39.6875rem);
+  }
+
+  /*NUMBER*/
+
+  .container-number{
+    max-width:  clamp(43.0625rem, 12.9911rem + 62.6488vw, 69.375rem);
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .number{
+    width: clamp(13.9375rem, 4.8661rem + 18.8988vw, 21.875rem);
+    border-top: 0.0625rem solid hsla(207, 33%, 32%, 0.25);
+    border-bottom: 0.0625rem solid hsla(207, 33%, 32%, 0.25); 
+    margin-bottom: 0;
+  }
+
+  .number .text{
+    padding: 1.5rem 0;
+  }
+
+  .number .text span{
+    text-align: left;
+  }
+
+}
+
+
+/***DESKTOP***/
+
+@media screen and (min-width: 90rem){
+
+  .about{
+    background: url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% + 31rem) -30rem / 48.75rem,
+                url('./assets/shared/desktop/bg-pattern-circle.svg') no-repeat  calc(50% - 52rem) 38rem / 48.75rem,
+            hsla(208, 33%, 71%, 0.25);  
+  }
+
+  .about .about-title{
+    font-size: 3.5rem;
+    letter-spacing: -0.027rem;
+    line-height: 1.1;
+    max-width: 57.5rem;
+    padding-right: 17rem;
+  }
+
+
+  /*IMAGE*/
+
+  .image-about{
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+
+}
